@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Link } from 'react-router-dom';
 import { useState } from "react";
 import {
   FaGithub,
@@ -8,6 +9,7 @@ import {
   FaGoogle,
   FaApple,
 } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -38,10 +40,10 @@ const Login = () => {
 
           {/* Social Buttons */}
           <div className="flex gap-3 mb-6">
-            <button className="flex items-center justify-center w-1/2 px-4 py-2 border rounded-lg text-gray-600 hover:bg-gray-100">
+            <button className="flex items-center justify-center w-1/2 px-1 py-1 border rounded-lg text-gray-600 hover:bg-gray-100">
               <FaGoogle className="mr-2" /> Sign in with Google
             </button>
-            <button className="flex items-center justify-center w-1/2 px-4 py-2 border rounded-lg text-gray-600 hover:bg-gray-100">
+            <button className="flex items-center justify-center w-1/2 px-1 py-1 border rounded-lg text-gray-600 hover:bg-gray-100">
               <FaApple className="mr-2" /> Sign in with Apple
             </button>
           </div>
@@ -78,7 +80,7 @@ const Login = () => {
 
           {/* Sign In Button */}
           <button className="w-full mt-6 bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
-            Sign In
+            <Link to="/dashboard">Sign In</Link>
           </button>
 
           <p className="text-center text-gray-500 mt-4 text-sm">
